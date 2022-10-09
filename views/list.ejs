@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Fredoka:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="dateTime">
+    <p> <%= todaysDay %> </p>
+  </div>
+
+
+  <div class="box">
+      <% for(let item of filler){ %>
+      <form  action="/delete"  method="post">
+      <input type="checkbox" name = "checkbox" value="<%=item._id%>" onchange="this.form.submit()">
+      <label for="myinput" class="indented-checkbox-text"> <%= item.name %> </label>
+      <hr />
+      <br>
+      <% } %>
+      <input type="hidden" name="listName" value = "<%=todaysDay%>"></input>
+    </form>
+  </div>
+
+
+  <div class="enterValue">
+    <form class="toDo" action="/toDoForm" method="post">
+    <input type="text" id="textBox" name="itemName" value="" placeholder="Enter your Task">
+    <button type="submit" name="submitButton" value = "<%=todaysDay%>">+</button>
+  </div>
+  </form>
+
+
+</body>
+
+</html>

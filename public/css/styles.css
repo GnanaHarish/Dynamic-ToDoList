@@ -1,0 +1,162 @@
+body {
+  background-color: #F7E7BD;
+  /* font-family: 'Caveat', cursive; */
+}
+
+.box {
+  margin: auto;
+  text-align: center;
+  background-color: #D9C6A5;
+  width: 40%;
+  height: 5%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.dateTime {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  /* font-family: 'Caveat', cursive; */
+  font-family: 'Fredoka', sans-serif;
+  background-color: #F5EFEF;
+  margin-top: 5%;
+  margin-bottom: 40px;
+  ;
+  width: 40%;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.insideCheckList {
+  text-align: center;
+  padding: 10px;
+  margin-left: 25px;
+  position: relative;
+  right: 30%;
+}
+
+/* .itemName{
+  display: flex;
+} */
+.checkbox {
+  float: left;
+  margin-top: 5px;
+}
+
+.textNextCheck {
+  display: inline;
+  /* font-family: 'Amatic SC', cursive; */
+  font-family: 'Pangolin', cursive;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 50px;
+}
+
+.enterValue {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  padding: 25px;
+  /* background-color: #EEECDA; */
+  font-family: 'Fredoka', sans-serif;
+}
+
+.enterValue label {
+  position: relative;
+  right: 70px;
+}
+
+.enterValue input {
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid #D9C6A5;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  width: 75%;
+  height: 45px;
+}
+
+.itemName {
+  width: 100%;
+}
+
+.submitButton {
+  border-radius: 25px;
+  width: 100px;
+  height: 100px;
+}
+
+.textNext {
+  text-align: center;
+  margin: auto;
+  display: inline;
+}
+
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
+  margin-top: 20px;
+  margin-left: 10px;
+  position: relative;
+  right: 200px;
+}
+
+input[type='checkbox']:checked {
+  background: #abd;
+}
+
+LABEL.indented-checkbox-text {
+  margin-left: 2em;
+  display: block;
+  position: relative;
+  margin-top: -1.4em;
+  /* make this margin match whatever your line-height is */
+  /* line-height: 1.4em;  /* can be set here, or elsewehere */
+  /* bottom: 5px; */
+  font-family: 'Fredoka', sans-serif;
+  /* line-height: 80%; */
+  font-size: 20px;
+  /* right: 150px; */
+  bottom: 5px;
+  text-align: left;
+  left: 45px;
+  white-space: pre-line;
+}
+
+::placeholder {
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+}
+
+button {
+  border-radius: 100%;
+  background-color: #abd;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  color: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+  background: #abd;
+  box-shadow: 0 0 3px gray;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+button : hover{
+  background-color: #EEECDA;
+}
+
+
+input[type = checkbox]:checked + label{
+  text-decoration: line-through #F5EFEF;
+}
